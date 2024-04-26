@@ -42,7 +42,7 @@ end
 
     L(jj)=LL(locsfval(1),jj);            % All first minimised values of $\lambda$ corresponds to h1 value until h1(end)
 
-    f(jj)=wang_objective(L(jj));         % Objective function value corresponds to $\lambda$ (L here)
+    f(jj)=rec_plate_objective_func(L(jj));         % Objective function value corresponds to $\lambda$ (L here)
 end
 
 plot(h1,L,'*b','MarkerSize',10)
